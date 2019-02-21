@@ -1,0 +1,31 @@
+<div class="card text-center">
+  
+  <div class="card-body">
+    <h6>CAMPEONATO DE FILMES</h6>
+    <h3 class="card-title">Fase de Seleção</h3>
+    <p class="card-text">Selecione seu filme em grupos de 2 / 4 / 8 / 16 para competirem e depois pressione o botão `Gerar meu campeonato` para prosseguir.</p>
+    
+  </div>
+</div>
+
+<app-messages></app-messages>
+
+<div class="card card-movies">
+  <div class="grid grid-pad row card-body">
+    <div *ngFor="let movie of movies" class="col-3">
+      <div class="module movie" >
+        <app-buttons-checkbox [movie]="movie" ></app-buttons-checkbox>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="row justify-content-end btn-row">
+  <div class="col-3">
+    <h5>Filmes selecionados: {{getSelected()}} de {{getCount()}}</h5>
+  </div>
+  <div class="col-auto ">
+    <button (click)="execute()" class="btn btn-secondary ">Gerar meu campeonato</button>
+  </div>
+</div>
+

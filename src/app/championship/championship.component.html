@@ -1,0 +1,28 @@
+<div class="card text-center row">
+
+    <div class="card-body">
+        <h6>CAMPEONATO DE FILMES</h6>
+        <h3>Resultado Final</h3>
+        <p class="card-text">Veja o resultado final do Campeonato de filmes de forma simples e rápida.</p>
+
+    </div>
+</div>
+
+<app-messages></app-messages>
+
+<div *ngIf="match" class="form">
+
+    <div class="shadow row bg-dark text-white champ-row">
+        <div class="col-1 text-center champ-ord"><label>1º</label></div>
+        <div class="col-8"><label>{{match.first.title}}</label> / <label>{{match.first.cupRate}}</label></div>
+    </div>
+
+    <div *ngIf="match.second" class="shadow row bg-dark text-white champ-row">
+        <div class="col-1 text-center champ-ord"><label>2º</label></div>
+        <div class="col-11"><label>{{match.second.title}}</label> / <label>{{match.second.cupRate}}</label></div>
+    </div>
+
+</div>
+<div class="row justify-content-end">
+    <button (click)="goBack()" class="btn btn-secondary right">Voltar</button>
+</div>

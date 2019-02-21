@@ -1,0 +1,9 @@
+<div *ngIf="messageService.messages.length" class="row">
+
+  <div class="alert alert-warning col-12" role="alert">
+    <h4 class="alert-heading">Messages</h4>
+    <hr>
+    <div *ngFor='let message of messageService.messages'>{{message}} </div>
+  </div>
+
+</div>

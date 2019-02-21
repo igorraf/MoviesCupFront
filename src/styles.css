@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+.btn-primary{
+    background-color: #353535;
+}
+
+.active{
+    background-color: #19bd4a !important;
+}
+
+.btnCheckbox {
+    min-width: 260px;
+    min-height: 86px;
+}
+
+.container{
+    min-width: 1200px;
+}
+
+.card{
+    background-color: rgb(245, 245, 245);
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.card-movies, .btn-row {
+    margin-top: 20px;
+}
+
+.champ-row{    
+    background-color: gray;
+}
+
+.champ-row * {
+    font-size: larger;
+}
+
+.champ-ord {
+    background-color: #505050;
+}
